@@ -1,7 +1,8 @@
 {
-  "name": "auth-frontend-starer-kit",
-  "version": "1.0.2",
+  "name": "@ant-design-pro-starter-kit/admin-frontend-starer-kit",
+  "version": "1.0.0",
   "bin": "./bin/cli.js",
+  "author": "intheblackworld",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
