@@ -1,3 +1,1 @@
-# 权限系统前端
-
-权限系统前端
+# auth-frontend-starter-kit

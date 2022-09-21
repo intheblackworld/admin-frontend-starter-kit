@@ -1,7 +1,7 @@
 {
-  "name": "rbac-micro-app",
-  "version": "3.0.0",
-  "private": true,
+  "name": "auth-frontend-starer-kit",
+  "version": "1.0.0",
+  "bin": "./bin/cli.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
