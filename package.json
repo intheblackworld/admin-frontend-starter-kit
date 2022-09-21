@@ -1,7 +1,9 @@
 {
-  "name": "@ant-design-pro-starter-kit/admin-frontend-starer-kit",
+  "name": "admin-frontend-starter-kit",
   "version": "1.0.0",
-  "bin": "./bin/cli.js",
+  "bin": {
+    "admin-frontend-starer-kit": "bin/cli.js"
+  },
   "author": "intheblackworld",
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -65,5 +67,16 @@
     "vue-svg-icon-loader": "^2.1.1",
     "vue-template-compiler": "^2.6.10",
     "webpack-theme-color-replacer": "^1.3.12"
-  }
+  },
+  "description": "",
+  "main": ".eslintrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/intheblackworld/admin-frontend-starter-kit.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/intheblackworld/admin-frontend-starter-kit/issues"
+  },
+  "homepage": "https://github.com/intheblackworld/admin-frontend-starter-kit#readme"
 }
