@@ -1,6 +1,6 @@
 {
   "name": "auth-frontend-starer-kit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "bin": "./bin/cli.js",
   "scripts": {
     "serve": "vue-cli-service serve",
