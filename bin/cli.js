@@ -1,3 +1,4 @@
+#! /usr/local/bin/node node
 const childProcess = require('child_process')
 
 const runCommand = command => {
