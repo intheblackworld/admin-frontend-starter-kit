@@ -13,7 +13,7 @@ export const asyncRouterMap = [
         path: '/application',
         component: RouteView,
         redirect: '/application/app',
-        meta: { title: '应用管理', icon: 'gold' },
+        meta: { title: '应用管理(示例)', icon: 'gold' },
         children: [
           {
             path: '/application/app',
@@ -46,47 +46,47 @@ export const asyncRouterMap = [
             meta: { title: '用户角色', keepAlive: true }
           }
         ]
+      },
+      {
+        path: '/resource',
+        component: RouteView,
+        redirect: '/resource/menuResource',
+        meta: { title: '资源管理(示例)', icon: 'gold' },
+        children: [
+          {
+            path: '/resource/menuResource',
+            name: 'MenuResource',
+            component: () => import('@/views/resource/menuResource'),
+            meta: { title: '菜单资源', keepAlive: true }
+          },
+          {
+            path: '/resource/permission',
+            name: 'Permission',
+            component: () => import('@/views/resource/permission'),
+            meta: { title: '权限管理', keepAlive: true }
+          }
+        ]
+      },
+      {
+        path: '/role',
+        component: RouteView,
+        redirect: '/role/role',
+        meta: { title: '角色管理(示例)', icon: 'gold' },
+        children: [
+          {
+            path: '/role/role',
+            name: 'Role',
+            component: () => import('@/views/role/role'),
+            meta: { title: '角色管理', keepAlive: true }
+          },
+          {
+            path: '/role/roleGroup',
+            name: 'RoleGroup',
+            component: () => import('@/views/role/roleGroup'),
+            meta: { title: '角色组管理', keepAlive: true }
+          }
+        ]
       }
-      // {
-      //   path: '/resource',
-      //   component: RouteView,
-      //   redirect: '/resource/menuResource',
-      //   meta: { title: '资源管理', icon: 'gold' },
-      //   children: [
-      //     {
-      //       path: '/resource/menuResource',
-      //       name: 'MenuResource',
-      //       component: () => import('@/views/resource/menuResource'),
-      //       meta: { title: '菜单资源', keepAlive: true }
-      //     },
-      //     {
-      //       path: '/resource/permission',
-      //       name: 'Permission',
-      //       component: () => import('@/views/resource/permission'),
-      //       meta: { title: '权限管理', keepAlive: true }
-      //     }
-      //   ]
-      // },
-      // {
-      //   path: '/role',
-      //   component: RouteView,
-      //   redirect: '/role/role',
-      //   meta: { title: '角色管理', icon: 'gold' },
-      //   children: [
-      //     {
-      //       path: '/role/role',
-      //       name: 'Role',
-      //       component: () => import('@/views/role/role'),
-      //       meta: { title: '角色管理', keepAlive: true }
-      //     },
-      //     {
-      //       path: '/role/roleGroup',
-      //       name: 'RoleGroup',
-      //       component: () => import('@/views/role/roleGroup'),
-      //       meta: { title: '角色组管理', keepAlive: true }
-      //     }
-      //   ]
-      // }
     ]
   },
   {

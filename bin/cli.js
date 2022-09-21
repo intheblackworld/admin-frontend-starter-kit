@@ -12,7 +12,7 @@ const runCommand = command => {
 }
 const repoName = process.argv[2]
 const gitCheckoutCommand = `git clone --depth 1 https://github.com/intheblackworld/admin-frontend-starter-kit.git test-project`
-const installDepsCommand = `cd ${repoName} && npm install`
+const installDepsCommand = `cd ${repoName} && npm install && npm run serve`
 
 console.log(`Cloning the repository with name ${repoName}`)
 const checkedOut = runCommand(gitCheckoutCommand)
