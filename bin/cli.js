@@ -1,4 +1,4 @@
-#! /usr/local/bin/node node
+#! /usr/bin/env node
 const childProcess = require('child_process')
 
 const runCommand = command => {
