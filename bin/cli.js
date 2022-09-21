@@ -1,8 +1,8 @@
-#!/usr/bin/env node
+const childProcess = require('child_process')
 
 const runCommand = command => {
   try {
-    execSync(`${command}`, { stdio: 'inherit' })
+    childProcess.exec(`${command}`, { stdio: [0, 1, 2], })
   } catch (e) {
     console.log(`Failed to execute ${command}`)
     return false
@@ -10,7 +10,7 @@ const runCommand = command => {
   return true
 }
 const repoName = process.argv[2]
-const gitCheckoutCommand = `git clone --depth 1 https://github.com/intheblackworld/admin-frontend-starter-kit.git ${repoName}`
+const gitCheckoutCommand = `git clone --depth 1 https://github.com/intheblackworld/admin-frontend-starter-kit.git test-project`
 const installDepsCommand = `cd ${repoName} && npm install`
 
 console.log(`Cloning the repository with name ${repoName}`)
