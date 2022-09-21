@@ -1,6 +1,6 @@
 {
   "name": "admin-frontend-starter-kit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "bin": {
     "admin-frontend-starer-kit": "bin/cli.js"
   },
